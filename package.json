@@ -7,6 +7,10 @@
         "recursion",
         "commonjs"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IvanKarpan/regex-recursion-cjs.git"
+    },
     "license": "MIT",
     "author": "Ivan Karpan <github@ivankarpan.com>",
     "main": "dist/index.cjs",
