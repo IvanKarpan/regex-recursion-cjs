@@ -1,6 +1,6 @@
 {
     "name": "regex-recursion-cjs",
-    "version": "6.0.2.0",
+    "version": "6.0.2",
     "description": "CommonJS wrapper for regex-recursion",
     "keywords": [
         "regex",
