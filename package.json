@@ -1,0 +1,46 @@
+{
+    "name": "regex-recursion-cjs",
+    "version": "6.0.2.0",
+    "description": "CommonJS wrapper for regex-recursion",
+    "keywords": [
+        "regex",
+        "recursion",
+        "commonjs"
+    ],
+    "license": "MIT",
+    "author": "Ivan Karpan <github@ivankarpan.com>",
+    "main": "dist/index.cjs",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "esbuild src/index.ts --format=cjs --bundle --outfile=dist/index.cjs && tsc",
+        "clean": "rm -rf dist",
+        "dev": "pnpm clean && pnpm build && pnpm test",
+        "lint": "ts-standard",
+        "lint:fix": "pnpm lint --fix",
+        "prepare": "pnpm husky",
+        "test": "node test.js"
+    },
+    "lint-staged": {
+        "*.{ts,js}": [
+            "ts-standard --fix"
+        ]
+    },
+    "devDependencies": {
+        "esbuild": "^0.20.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2",
+        "regex-recursion": "^6.0.2",
+        "ts-standard": "^12.0.2",
+        "typescript": "^5.3.3"
+    },
+    "packageManager": "pnpm@10.7.0",
+    "ts-standard": {
+        "ignore": [
+            "dist",
+            "node_modules"
+        ]
+    }
+}
